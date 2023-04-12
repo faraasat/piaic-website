@@ -6,8 +6,11 @@
   --primary-color-1: rgb(25, 42, 86);
   --primary-color-2: rgb(255, 255, 255);
   --primary-color-3: rgb(1, 121, 105);
+  --primary-color-4: rgb(0, 191, 154);
   --background-start-rgb: rgb(230, 219, 219);
   --background-end-rgb: rgb(223, 237, 240);
+  --josefin-sans-font: var(--josefin-sans-font);
+  --montserrat-font: var(--montserrat-font);
 }
 
 @media (prefers-color-scheme: dark) {

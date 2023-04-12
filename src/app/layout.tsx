@@ -74,7 +74,9 @@ export default function RootLayout({
       <body className={`${montserrat.variable}  ${josefin_sans.variable}`}>
         <ThemeProvider>
           <Navbar />
-          <main className="flex flex-col">{children}</main>
+          <main className="flex flex-col pt-[60px] max-md:pt-[80px]">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
