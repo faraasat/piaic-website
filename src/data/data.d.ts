@@ -13,3 +13,9 @@ export interface IFooterSocialsData {
   Icon: any;
   url: string;
 }
+
+export interface ISmallNavigationData {
+  name: string;
+  url: string;
+  Icon: any;
+}
