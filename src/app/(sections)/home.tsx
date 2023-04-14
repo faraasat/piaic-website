@@ -9,13 +9,13 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="flex relative justify-center h-[800px] py-10 w-full bg-gradient-to-b from-[color:var(--primary-color-5)] to-[color:var(--primary-color-6)]"
+      className="flex relative justify-center h-[750px] py-10 w-full bg-gradient-to-b from-[color:var(--primary-color-5)] to-[color:var(--primary-color-6)]"
     >
       <div
-        className="absolute h-full w-full top-0 left-0 bg-no-repeat bg-center"
+        className="absolute h-full w-full top-0 left-0 bg-no-repeat bg-bottom bg-cover z-20"
         style={{ backgroundImage: "url(bg1.png)" }}
       />
-      <div className="flex 2xl:max-w-[1400px] w-[90%] justify-between h-full mt-[50px]">
+      <div className="relative flex 2xl:max-w-[1400px] w-[90%] justify-between h-full mt-[20px] mb-[40px] z-[100]">
         <div className="w-[calc(100%-450px-50px-10px)] flex flex-col justify-center">
           <h2 className="text-[65px] leading-none font-black text-[color:var(--primary-color-1)]">
             Presidential Intitiative
@@ -38,7 +38,7 @@ const HomeSection = () => {
               loop={0}
             />
           </h3>
-          <p className="text-justify text-[22px] mb-4">
+          <p className="text-justify mb-4">
             The mission of PIAIC is to reshape Pakistan by revolutionizing
             education, research, and business by adopting latest, cutting-edge
             technologies. Experts are calling this the 4th industrial
@@ -63,7 +63,7 @@ const HomeSection = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[450px] flex relative items-center scale-x-[-1]">
+        <div className="w-[450px] flex relative items-center scale-x-[-1] translate-y-[-60px]">
           <Image
             src={Fg1}
             alt="piaic president"

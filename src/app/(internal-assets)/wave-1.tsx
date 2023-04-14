@@ -1,6 +1,6 @@
 import React from "react";
 
-function Wave1() {
+function Wave1({ fillColor = "rgba(255,255,255,1)" }: { fillColor?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,8 +10,8 @@ function Wave1() {
     >
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop offset="0%" stopColor="rgba(255, 255, 255, 1)"></stop>
-          <stop offset="100%" stopColor="rgba(255, 255, 255, 1)"></stop>
+          <stop offset="0%" stopColor={fillColor}></stop>
+          <stop offset="100%" stopColor={fillColor}></stop>
         </linearGradient>
       </defs>
       <path

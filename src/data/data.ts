@@ -16,7 +16,10 @@ import {
   IFooterQuickNavData,
   IFooterSocialsData,
   INavigationData,
+  IAvailableCoursesData,
 } from "@/data";
+
+import { Ai, Blockchain, Cloud, Iot, Metaverse } from "@/assets";
 
 export const navigationData: Array<INavigationData> = [
   {
@@ -148,5 +151,48 @@ export const smallNavigationData: Array<INavigationData> = [
     name: "Portal",
     url: "/portal",
     Icon: RiAdminFill,
+  },
+];
+
+export const availableCoursesData: Array<IAvailableCoursesData> = [
+  {
+    title: "Blockchain Development",
+    content:
+      "A ONE YEAR BLOCKCHAIN PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF BLOCKCHAIN FINTECH AND SMART CONTRACTS.",
+    url: "/blockchain-development",
+    Img: Blockchain,
+    alt: "blockchain",
+  },
+  {
+    title: "Cloud Development",
+    content:
+      "A ONE YEAR CLOUD COMPUTING PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. GETTING PAKISTAN READY FOR THE NEW ERA OF MICROSERVICES AND MULTI-CLOUD NATIVE COMPUTING.",
+    url: "/cloud-development",
+    Img: Cloud,
+    alt: "cloud",
+  },
+  {
+    title: "AI and ML",
+    content:
+      "A ONE YEAR AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI.",
+    url: "/ai-and-ml",
+    Img: Ai,
+    alt: "ai and ml",
+  },
+  {
+    title: "Internet of Things",
+    content:
+      "A FIFTEEN MONTHS IOT AND AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF INTERNET OF THINGS AND AI",
+    url: "/internet-of-things",
+    Img: Iot,
+    alt: "iot",
+  },
+  {
+    title: "Web3 and Metaverse",
+    content:
+      "Getting Ready for the Next Generation and Future of the Internet - Join a 13 Trillion Dollar Industry with 5 Billion Users.",
+    url: "web3-and-metaverse",
+    Img: Metaverse,
+    alt: "web3 and metaverse",
   },
 ];

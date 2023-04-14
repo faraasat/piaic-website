@@ -3,6 +3,7 @@ import {
   footerQuickNavData,
   footerSocialsData,
   smallNavigationData,
+  availableCoursesData,
 } from "./data";
 
 import {
@@ -10,6 +11,7 @@ import {
   IFooterQuickNavData,
   IFooterSocialsData,
   ISmallNavigationData,
+  IAvailableCoursesData,
 } from "./data.d";
 
 export type {
@@ -17,6 +19,7 @@ export type {
   IFooterQuickNavData,
   IFooterSocialsData,
   ISmallNavigationData,
+  IAvailableCoursesData,
 };
 
 export {
@@ -24,4 +27,5 @@ export {
   footerQuickNavData,
   footerSocialsData,
   smallNavigationData,
+  availableCoursesData,
 };

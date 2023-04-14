@@ -19,3 +19,11 @@ export interface ISmallNavigationData {
   url: string;
   Icon: any;
 }
+
+export interface IAvailableCoursesData {
+  title: string;
+  content: string;
+  Img: any;
+  url: string;
+  alt: string;
+}
