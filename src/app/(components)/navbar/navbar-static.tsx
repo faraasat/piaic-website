@@ -23,11 +23,11 @@ export const MainNavWrapper = ({
   children: JSX.Element | JSX.Element[];
 }) => {
   return (
-    <div className="2xl:max-w-[1400px] w-[90%] flex justify-between items-center">
-      <div className="flex relative self-start">
+    <div className="2xl:max-w-[1400px] w-[90%] flex items-center">
+      <div className="flex relative self-start ml-0 mr-auto">
         <Link
           href={"/"}
-          className="absolute w-[87.5px] h-[120px] max-md:relative max-md:w-[40px] max-md:h-[60px]"
+          className="absolute w-[87.5px] h-[120px] max-md:relative max-lg:w-[70px] max-lg:h-[105px] max-md:w-[40px] max-md:h-[60px]"
         >
           <Image
             src={Logo}
@@ -40,7 +40,7 @@ export const MainNavWrapper = ({
           />
         </Link>
       </div>
-      <nav className="flex gap-[30px] text-lg font-medium items-center max-md:hidden max-lg:gap-[22px]">
+      <nav className="flex gap-[30px] text-lg font-medium items-center max-md:hidden max-lg:gap-[18px] mr-0 ml-auto">
         {navigationData.map((nd, i) => {
           return (
             <Link
@@ -48,7 +48,7 @@ export const MainNavWrapper = ({
               key={i}
               className={`${
                 nd.Icon
-                  ? "flex items-center gap-2"
+                  ? "flex items-center gap-2 max-lg:gap-1"
                   : "flex bg-[color:var(--primary-color-2)] text-[color:var(--primary-color-3)] leading-[1] py-[6px] px-[10px] rounded-sm items-center"
               }`}
             >

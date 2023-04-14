@@ -12,7 +12,7 @@ import { footerQuickNavData, footerSocialsData } from "@/data";
 const Footer = () => {
   return (
     <footer className="flex flex-col z-[100]">
-      <div className="mt-[100px] flex justify-center bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] text-[color:var(--primary-color-2)]">
+      <div className="flex justify-center bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] text-[color:var(--primary-color-2)]">
         <div className="2xl:max-w-[1400px] w-[90%] py-8 flex justify-evenly flex-row max-md:flex-col">
           <div className="flex flex-col items-center w-[35%] max-md:mb-8 max-md:flex-row max-md:w-[100%] max-md:gap-5">
             <div className="flex">

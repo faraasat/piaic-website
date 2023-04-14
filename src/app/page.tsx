@@ -1,3 +1,9 @@
+import { HomeSection } from "./(sections)";
+
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div className="flex flex-col">
+      <HomeSection />
+    </div>
+  );
 }
