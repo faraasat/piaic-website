@@ -4,6 +4,7 @@ import {
   footerSocialsData,
   smallNavigationData,
   availableCoursesData,
+  bootcampData,
 } from "./data";
 
 import {
@@ -28,4 +29,5 @@ export {
   footerSocialsData,
   smallNavigationData,
   availableCoursesData,
+  bootcampData,
 };
