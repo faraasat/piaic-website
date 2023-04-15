@@ -21,6 +21,10 @@ module.exports = {
           ...defaultTheme.fontFamily.serif,
         ],
       },
+      screens: {
+        'xs': '475px',
+        ...defaultTheme.screens,
+      },
     },
   },
   plugins: [],
