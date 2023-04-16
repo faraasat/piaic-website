@@ -51,7 +51,22 @@ import {
   IAvailableCoursesData,
 } from "@/data";
 
-import { Ai, Blockchain, Cloud, Iot, Metaverse } from "@/assets";
+import {
+  Ai,
+  Blockchain,
+  Cloud,
+  Instructor1,
+  Instructor2,
+  Instructor3,
+  Instructor4,
+  Instructor5,
+  Instructor6,
+  Instructor7,
+  Instructor8,
+  Instructor9,
+  Iot,
+  Metaverse,
+} from "@/assets";
 
 import { IBootcamp } from "@/sections";
 
@@ -329,6 +344,84 @@ export const bootcampData: Array<IBootcamp> = [
         Icon: SiShopify,
       },
     ],
+    instructors: {
+      main: {
+        Img: Instructor9,
+        name: "Zia Khan",
+      },
+      focus: [
+        {
+          Img: Instructor3,
+          name: "Aamir Pinger",
+        },
+        {
+          Img: Instructor6,
+          name: "Mohsin Khalid",
+        },
+        {
+          Img: Instructor8,
+          name: "Zeeshan Hanif",
+        },
+        {
+          Img: Instructor4,
+          name: "Daniyal Nagori",
+        },
+      ],
+      small: [
+        {
+          Img: Instructor1,
+          name: "Adil Altaf",
+        },
+        {
+          Img: Instructor2,
+          name: "Ameen Aalam",
+        },
+
+        {
+          Img: Instructor5,
+          name: "Hina Khan",
+        },
+        {
+          Img: Instructor7,
+          name: "Waris Hasan",
+        },
+      ],
+    },
+    content: {
+      urdu: {
+        channel:
+          "https://www.youtube.com/playlist?list=PLF32E4w-uhaP0SVwqlC8De-En-4CEQnAk",
+        details: [
+          {
+            title: "Bootcamp 2020 - Expense Tracker App",
+            url: "https://www.youtube.com/watch?v=dkMba8oK55w",
+            imgUrl: "https://img.youtube.com/vi/dkMba8oK55w/0.jpg",
+          },
+          {
+            title: "Bootcamp 2020 - Class 5",
+            url: "https://www.youtube.com/watch?v=_UUlRvbJPfQ",
+            imgUrl: "https://img.youtube.com/vi/_UUlRvbJPfQ/0.jpg",
+          },
+        ],
+      },
+      english: {
+        channel:
+          "https://www.youtube.com/playlist?list=PLfE-eWQ6cwuMBzR-bDU9FFzSvs0wQvR0J",
+        details: [
+          {
+            title: "BootCamp 2020 - Expense Tracker App",
+            url: "https://www.youtube.com/watch?v=q6GmIxnflfM",
+            imgUrl: "https://img.youtube.com/vi/q6GmIxnflfM/hq3.jpg",
+          },
+          {
+            title: "Bootcamp 2020 - Class 5",
+            url: "https://www.youtube.com/watch?v=h27ABSn-27g",
+            imgUrl: "https://img.youtube.com/vi/h27ABSn-27g/0.jpg",
+          },
+        ],
+      },
+      link: "https://panacloud.github.io/bootcamp-2020/",
+    },
   },
   {
     title: "Bootcamp 2021",
@@ -408,5 +501,83 @@ export const bootcampData: Array<IBootcamp> = [
         Icon: SiHiveBlockchain,
       },
     ],
+    instructors: {
+      main: {
+        Img: Instructor9,
+        name: "Zia Khan",
+      },
+      focus: [
+        {
+          Img: Instructor3,
+          name: "Aamir Pinger",
+        },
+        {
+          Img: Instructor6,
+          name: "Mohsin Khalid",
+        },
+        {
+          Img: Instructor8,
+          name: "Zeeshan Hanif",
+        },
+        {
+          Img: Instructor4,
+          name: "Daniyal Nagori",
+        },
+      ],
+      small: [
+        {
+          Img: Instructor1,
+          name: "Adil Altaf",
+        },
+        {
+          Img: Instructor2,
+          name: "Ameen Aalam",
+        },
+
+        {
+          Img: Instructor5,
+          name: "Hina Khan",
+        },
+        {
+          Img: Instructor7,
+          name: "Waris Hasan",
+        },
+      ],
+    },
+    content: {
+      urdu: {
+        channel:
+          "https://www.youtube.com/playlist?list=PLF32E4w-uhaP0SVwqlC8De-En-4CEQnAk",
+        details: [
+          {
+            title: "Bootcamp 2020 - Expense Tracker App",
+            url: "https://www.youtube.com/watch?v=dkMba8oK55w",
+            imgUrl: "https://img.youtube.com/vi/dkMba8oK55w/0.jpg",
+          },
+          {
+            title: "Bootcamp 2020 - Class 5",
+            url: "https://www.youtube.com/watch?v=_UUlRvbJPfQ",
+            imgUrl: "https://img.youtube.com/vi/_UUlRvbJPfQ/0.jpg",
+          },
+        ],
+      },
+      english: {
+        channel:
+          "https://www.youtube.com/playlist?list=PLfE-eWQ6cwuMBzR-bDU9FFzSvs0wQvR0J",
+        details: [
+          {
+            title: "BootCamp 2020 - Expense Tracker App",
+            url: "https://www.youtube.com/watch?v=q6GmIxnflfM",
+            imgUrl: "https://img.youtube.com/vi/q6GmIxnflfM/hq3.jpg",
+          },
+          {
+            title: "Bootcamp 2020 - Class 5",
+            url: "https://www.youtube.com/watch?v=h27ABSn-27g",
+            imgUrl: "https://img.youtube.com/vi/h27ABSn-27g/0.jpg",
+          },
+        ],
+      },
+      link: "https://panacloud.github.io/bootcamp-2020/",
+    },
   },
 ];
