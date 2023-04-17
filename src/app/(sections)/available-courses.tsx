@@ -8,7 +8,7 @@ const AvailableCourses = () => {
   return (
     <section
       id="available-courses"
-      className="relative flex flex-col w-full h-auto items-center bg-[color:var(--primary-color-2)]"
+      className="relative flex flex-col w-full h-auto items-center bg-[color:var(--primary-color-2)] z-[500]"
     >
       <div className="relative top-0 left-0 w-full h-auto z-[200] mt-[-110px] max-xl:mt-[-90px] max-lg:mt-[-65px] max-md:mt-[-55px] max-sm:mt-[-40px]">
         <Wave1 fillColor="var(--primary-color-2)" />

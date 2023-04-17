@@ -66,6 +66,11 @@ import {
   Instructor9,
   Iot,
   Metaverse,
+  P1,
+  P2,
+  P3,
+  P4,
+  P5,
 } from "@/assets";
 
 import { IBootcamp } from "@/sections";
@@ -257,6 +262,7 @@ export const bootcampData: Array<IBootcamp> = [
       "We will teach you online to Build Modern Full Stack Serverless Mobile Web Apps and Websites including e-commerce apps using React, Gatsby.js, Redux, GraphQL, RESTful OpenAPI, Serverless, AWS Lambda Functions, AWS Lambda Containers, AWS Aruora Serverless, AWS Neptune, AWS EventBridge, MongoDB, FaunaDB, Git, GitHub, GitHub Actions, Netlify, Contentful, Stripe, SnipCart, Shopify, etc.",
     wave: true,
     baseBgColor: "var(--primary-color-1)",
+    secBgColor: "var(--primary-color-3)",
     Illustration: Coding1,
     techIcons: [
       {
@@ -428,8 +434,9 @@ export const bootcampData: Array<IBootcamp> = [
     subTitle:
       "Become a Certified Unicorn Developer (CUD) and Participant in the API Token Economy",
     about: `Covid-19 propelled businesses into the future, ready or not. “Covid has acted like a time machine: it brought 2030 to 2020,” said Loren Padelford, vice president at Shopify Inc. “All those trends, where organizations thought they had more time, got rapidly accelerated.” We at Panacloud are trying to respond to these challenges and trying to lead from the front. For this purpose are starting a not-for-profit movement called Operation Unicorn.`,
-    wave: false,
+    wave: true,
     baseBgColor: "var(--primary-color-3)",
+    secBgColor: "var(--primary-color-2)",
     Illustration: Coding2,
     techIcons: [
       {
@@ -508,76 +515,61 @@ export const bootcampData: Array<IBootcamp> = [
       },
       focus: [
         {
-          Img: Instructor3,
-          name: "Aamir Pinger",
+          Img: P1,
+          name: "Inam ul Haq",
         },
         {
-          Img: Instructor6,
-          name: "Mohsin Khalid",
+          Img: P2,
+          name: "Qasim",
         },
         {
-          Img: Instructor8,
-          name: "Zeeshan Hanif",
+          Img: P3,
+          name: "Anees",
         },
         {
-          Img: Instructor4,
-          name: "Daniyal Nagori",
-        },
-      ],
-      small: [
-        {
-          Img: Instructor1,
-          name: "Adil Altaf",
+          Img: P4,
+          name: "Faheem",
         },
         {
-          Img: Instructor2,
-          name: "Ameen Aalam",
-        },
-
-        {
-          Img: Instructor5,
-          name: "Hina Khan",
-        },
-        {
-          Img: Instructor7,
-          name: "Waris Hasan",
+          Img: P5,
+          name: "Shahrukh",
         },
       ],
     },
     content: {
       urdu: {
         channel:
-          "https://www.youtube.com/playlist?list=PLF32E4w-uhaP0SVwqlC8De-En-4CEQnAk",
+          "https://www.youtube.com/@certifiedunicorndeveloperi6307/videos",
         details: [
           {
-            title: "Bootcamp 2020 - Expense Tracker App",
-            url: "https://www.youtube.com/watch?v=dkMba8oK55w",
-            imgUrl: "https://img.youtube.com/vi/dkMba8oK55w/0.jpg",
+            title: "Bootcamp 2021 URDU - Class 1",
+            url: "https://www.youtube.com/watch?v=V4z6KC3ENmM",
+            imgUrl: "https://img.youtube.com/vi/V4z6KC3ENmM/0.jpg",
           },
           {
-            title: "Bootcamp 2020 - Class 5",
-            url: "https://www.youtube.com/watch?v=_UUlRvbJPfQ",
-            imgUrl: "https://img.youtube.com/vi/_UUlRvbJPfQ/0.jpg",
+            title: "Bootcamp 2021 URDU - Class 2",
+            url: "https://www.youtube.com/watch?v=CJNtss-KKxI",
+            imgUrl: "https://img.youtube.com/vi/CJNtss-KKxI/0.jpg",
           },
         ],
       },
       english: {
         channel:
-          "https://www.youtube.com/playlist?list=PLfE-eWQ6cwuMBzR-bDU9FFzSvs0wQvR0J",
+          "https://www.youtube.com/playlist?list=PLCD4H0tiu6FXq4fP5PmMu3vdGKN2kmqzp",
         details: [
           {
-            title: "BootCamp 2020 - Expense Tracker App",
-            url: "https://www.youtube.com/watch?v=q6GmIxnflfM",
-            imgUrl: "https://img.youtube.com/vi/q6GmIxnflfM/hq3.jpg",
+            title: "Bootcamp 2021 ENGLISH - Class 1",
+            url: "https://www.youtube.com/watch?v=1ztdYFRyCyE",
+            imgUrl: "https://img.youtube.com/vi/1ztdYFRyCyE/0.jpg",
           },
           {
-            title: "Bootcamp 2020 - Class 5",
-            url: "https://www.youtube.com/watch?v=h27ABSn-27g",
-            imgUrl: "https://img.youtube.com/vi/h27ABSn-27g/0.jpg",
+            title: "Bootcamp 2021 ENGLISH - Class 2",
+            url: "https://www.youtube.com/watch?v=-WQ2DHpeaFs",
+            imgUrl: "https://img.youtube.com/vi/-WQ2DHpeaFs/0.jpg",
           },
         ],
       },
-      link: "https://panacloud.github.io/bootcamp-2020/",
+      link: "https://panacloud.github.io/bootcamp-2021/",
     },
   },
 ];

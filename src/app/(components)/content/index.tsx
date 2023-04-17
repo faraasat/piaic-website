@@ -9,7 +9,7 @@ import { IContent } from "@/sections";
 
 const ContentComponent: FC<IContent> = ({ channel, details }) => {
   return (
-    <div className="flex justify-between items-center gap-4">
+    <div className="flex justify-start items-center gap-4">
       <div className="flex gap-4">
         {details.map((d) => {
           return (

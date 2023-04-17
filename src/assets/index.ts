@@ -15,6 +15,11 @@ import Instructor6 from "./mk.webp";
 import Instructor7 from "./wh.webp";
 import Instructor8 from "./zh.webp";
 import Instructor9 from "./zk.webp";
+import P1 from "./p1.webp";
+import P2 from "./p2.webp";
+import P3 from "./p3.webp";
+import P4 from "./p4.webp";
+import P5 from "./p5.webp";
 
 export {
   Logo,
@@ -34,4 +39,9 @@ export {
   Instructor7,
   Instructor8,
   Instructor9,
+  P1,
+  P2,
+  P3,
+  P4,
+  P5,
 };

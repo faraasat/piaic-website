@@ -25,12 +25,13 @@ export interface IBootcamp {
   about: string;
   wave: boolean;
   baseBgColor: string;
+  secBgColor: string;
   Illustration: any;
   techIcons: Array<ITechIcons>;
   instructors: {
     main: IInstructor;
     focus: Array<IInstructor>;
-    small: Array<IInstructor>;
+    small?: Array<IInstructor>;
   };
   content: {
     urdu: IContent;
