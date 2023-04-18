@@ -5,6 +5,7 @@ import {
   smallNavigationData,
   availableCoursesData,
   bootcampData,
+  metaverseCourseData,
 } from "./data";
 
 import {
@@ -30,4 +31,5 @@ export {
   smallNavigationData,
   availableCoursesData,
   bootcampData,
+  metaverseCourseData,
 };

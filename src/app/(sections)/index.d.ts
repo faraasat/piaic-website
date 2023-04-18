@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface ITechIcons {
   title: string;
   Icon: any;
@@ -28,14 +30,18 @@ export interface IBootcamp {
   secBgColor: string;
   Illustration: any;
   techIcons: Array<ITechIcons>;
-  instructors: {
-    main: IInstructor;
-    focus: Array<IInstructor>;
-    small?: Array<IInstructor>;
-  };
-  content: {
+  blendMode?: string;
+  instructors:
+    | {
+        main: IInstructor;
+        focus: Array<IInstructor>;
+        small?: Array<IInstructor>;
+      }
+    | Array<IInstructor>;
+  content?: {
     urdu: IContent;
     english: IContent;
     link: string;
   };
+  nonContentLink?: string;
 }

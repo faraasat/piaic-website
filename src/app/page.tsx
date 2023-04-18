@@ -1,6 +1,6 @@
 import { AvailableCourses, Bootcamp, HomeSection } from "@/sections";
 
-import { bootcampData } from "@/data";
+import { bootcampData, metaverseCourseData } from "@/data";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       {bootcampData.map((bd) => (
         <Bootcamp key={bd.title} {...bd} />
       ))}
+      <Bootcamp {...metaverseCourseData} />
     </div>
   );
 }

@@ -9,7 +9,7 @@ import { IContent } from "@/sections";
 
 const ContentComponent: FC<IContent> = ({ channel, details }) => {
   return (
-    <div className="flex justify-start items-center gap-4">
+    <div className="flex justify-start items-center gap-4 max-sm:hidden">
       <div className="flex gap-4">
         {details.map((d) => {
           return (
@@ -19,10 +19,12 @@ const ContentComponent: FC<IContent> = ({ channel, details }) => {
               className="flex flex-col items-center"
               target="_blank"
             >
-              <div className="relative w-[270px] h-[150px]">
+              <div className="relative w-[270px] h-[150px] max-md:w-[220px] max-md:h-[120px]">
                 <Image src={d.imgUrl} alt={d.title} fill={true} />
               </div>
-              <div className="whitespace-break-spaces">{d.title}</div>
+              <div className="whitespace-break-spaces text-center">
+                {d.title}
+              </div>
             </Link>
           );
         })}

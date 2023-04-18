@@ -15,6 +15,7 @@ import {
   SiCss3,
   SiEthereum,
   SiFauna,
+  SiFigma,
   SiGatsby,
   SiGit,
   SiGithub,
@@ -26,6 +27,7 @@ import {
   SiLinuxcontainers,
   SiMongodb,
   SiNetlify,
+  SiNextdotjs,
   SiNodedotjs,
   SiNpm,
   SiOpenapiinitiative,
@@ -39,6 +41,7 @@ import {
   SiSolidity,
   SiStripe,
   SiSwagger,
+  SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 import { TbAugmentedReality2 } from "react-icons/tb";
@@ -75,7 +78,7 @@ import {
 
 import { IBootcamp } from "@/sections";
 
-import { Coding1, Coding2 } from "@/internal-assets";
+import { Coding1, Coding2, Coding3 } from "@/internal-assets";
 
 export const navigationData: Array<INavigationData> = [
   {
@@ -436,7 +439,7 @@ export const bootcampData: Array<IBootcamp> = [
     about: `Covid-19 propelled businesses into the future, ready or not. “Covid has acted like a time machine: it brought 2030 to 2020,” said Loren Padelford, vice president at Shopify Inc. “All those trends, where organizations thought they had more time, got rapidly accelerated.” We at Panacloud are trying to respond to these challenges and trying to lead from the front. For this purpose are starting a not-for-profit movement called Operation Unicorn.`,
     wave: true,
     baseBgColor: "var(--primary-color-3)",
-    secBgColor: "var(--primary-color-2)",
+    secBgColor: "var(--primary-color-6)",
     Illustration: Coding2,
     techIcons: [
       {
@@ -573,3 +576,86 @@ export const bootcampData: Array<IBootcamp> = [
     },
   },
 ];
+
+export const metaverseCourseData: IBootcamp = {
+  title: "[NEW] Web3 and Metaverse",
+  subTitle:
+    "Getting Ready for the Next Generation and Future of the Internet - Join a 13 Trillion Dollar Industry with 5 Billion Users",
+  about:
+    "The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.",
+  wave: false,
+  baseBgColor: "var(--primary-color-6)",
+  secBgColor: "var(--primary-color-6)",
+  blendMode: "difference",
+  Illustration: Coding3,
+  techIcons: [
+    {
+      title: "JavaScript",
+      Icon: SiJavascript,
+    },
+    {
+      title: "TypeScript",
+      Icon: SiTypescript,
+    },
+    {
+      title: "React",
+      Icon: SiReact,
+    },
+    {
+      title: "NextJs",
+      Icon: SiNextdotjs,
+    },
+    {
+      title: "Git",
+      Icon: SiGit,
+    },
+    {
+      title: "GitHub",
+      Icon: SiGithub,
+    },
+    {
+      title: "Solidity",
+      Icon: SiSolidity,
+    },
+    {
+      title: "NPM",
+      Icon: SiNpm,
+    },
+    {
+      title: "PostgreSQL",
+      Icon: SiPostgresql,
+    },
+    {
+      title: "Ethereum",
+      Icon: SiEthereum,
+    },
+    {
+      title: "SmartContracts",
+      Icon: SiHiveBlockchain,
+    },
+    {
+      title: "Tailwind",
+      Icon: SiTailwindcss,
+    },
+    {
+      title: "Figma",
+      Icon: SiFigma,
+    },
+  ],
+  instructors: [
+    { Img: Instructor9, name: "Zia Khan" },
+    {
+      Img: Instructor4,
+      name: "Daniyal Nagori",
+    },
+    {
+      Img: Instructor2,
+      name: "Ameen Aalam",
+    },
+    {
+      Img: Instructor5,
+      name: "Hina Khan",
+    },
+  ],
+  nonContentLink: "https://www.panaverse.co/",
+};
