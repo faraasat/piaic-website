@@ -9,17 +9,24 @@
   --primary-color-4: rgb(0, 191, 154);
   --primary-color-5: rgb(230, 219, 219);
   --primary-color-6: rgb(223, 237, 240);
+
+  --scroll-bg-color: #f1f1f1;
+  --scroll-color: #888;
+
   --bg-1: url("../assets/bg1.png");
   --josefin-sans-font: var(--josefin-sans-font);
   --montserrat-font: var(--montserrat-font);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="dark"] {
+  --primary-color-1: rgb(25, 42, 86);
+  --primary-color-2: rgb(255, 255, 255);
+  --primary-color-3: rgb(1, 121, 105);
+  --primary-color-5: rgb(230, 219, 219);
+  --primary-color-6: rgb(156, 203, 214);
+
+  --scroll-bg-color: #888;
+  --scroll-color: #292929;
 }
 
 * {
@@ -36,6 +43,17 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   color: rgb(var(--primary-color-2));
-  /* background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
-    var(--background-start-rgb); */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-color)
 }

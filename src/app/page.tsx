@@ -1,4 +1,4 @@
-import { AvailableCourses, Bootcamp, HomeSection } from "@/sections";
+import { AvailableCourses, Bootcamp, HomeSection, Partners } from "@/sections";
 
 import { bootcampData, metaverseCourseData } from "@/data";
 
@@ -11,6 +11,7 @@ export default function Home() {
         <Bootcamp key={bd.title} {...bd} />
       ))}
       <Bootcamp {...metaverseCourseData} />
+      <Partners />
     </div>
   );
 }

@@ -20,6 +20,8 @@ import P2 from "./p2.webp";
 import P3 from "./p3.webp";
 import P4 from "./p4.webp";
 import P5 from "./p5.webp";
+import Panacloud from "./panacloud.svg";
+import Saylani from "./saylani.png";
 
 export {
   Logo,
@@ -44,4 +46,6 @@ export {
   P3,
   P4,
   P5,
+  Panacloud,
+  Saylani,
 };

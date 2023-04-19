@@ -1,6 +1,7 @@
 import HomeSection from "./home";
 import AvailableCourses from "./available-courses";
 import Bootcamp from "./bootcamp";
+import Partners from "./partners";
 
 import {
   IBootcamp,
@@ -12,4 +13,4 @@ import {
 
 export type { IBootcamp, ITechIcons, IInstructor, IContent, IContentDetails };
 
-export { HomeSection, AvailableCourses, Bootcamp };
+export { HomeSection, AvailableCourses, Bootcamp, Partners };
