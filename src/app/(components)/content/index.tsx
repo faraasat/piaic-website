@@ -20,7 +20,7 @@ const ContentComponent: FC<IContent> = ({ channel, details }) => {
               target="_blank"
             >
               <div className="relative w-[270px] h-[150px] max-md:w-[220px] max-md:h-[120px]">
-                <Image src={d.imgUrl} alt={d.title} fill={true} />
+                <Image src={d.imgUrl} alt={d.title} fill={true} sizes="270px" />
               </div>
               <div className="whitespace-break-spaces text-center">
                 {d.title}

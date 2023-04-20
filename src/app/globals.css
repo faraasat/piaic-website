@@ -9,6 +9,7 @@
   --primary-color-4: rgb(0, 191, 154);
   --primary-color-5: rgb(230, 219, 219);
   --primary-color-6: rgb(223, 237, 240);
+  --primary-color-7: rgb(255, 255, 255);
 
   --scroll-bg-color: #f1f1f1;
   --scroll-color: #888;
@@ -24,6 +25,7 @@
   --primary-color-3: rgb(1, 121, 105);
   --primary-color-5: rgb(230, 219, 219);
   --primary-color-6: rgb(156, 203, 214);
+  --primary-color-7: #3f3f3f;
 
   --scroll-bg-color: #888;
   --scroll-color: #292929;
@@ -55,5 +57,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scroll-color)
+  background: var(--scroll-color);
 }

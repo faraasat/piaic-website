@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { IoMdArrowDropdown } from "react-icons/io";
+
 import { Logo } from "@/assets";
 
 import { navigationData, smallNavigationData } from "@/data";
@@ -43,20 +45,65 @@ export const MainNavWrapper = ({
       <nav className="flex gap-[30px] text-lg font-medium items-center max-md:hidden max-lg:gap-[18px] mr-0 ml-auto">
         {navigationData.map((nd, i) => {
           return (
-            <Link
-              href={nd.url}
+            <div
               key={i}
               className={`${
                 nd.Icon
-                  ? "flex items-center gap-2 max-lg:gap-1"
-                  : "flex bg-[color:var(--primary-color-2)] text-[color:var(--primary-color-3)] leading-[1] py-[6px] px-[10px] rounded-sm items-center"
+                  ? "flex items-center gap-2 max-lg:gap-1 group"
+                  : "flex bg-[color:var(--primary-color-2)] text-[color:var(--primary-color-3)] leading-[1] py-[6px] px-[10px] rounded-sm items-center group"
               }`}
             >
-              <div className="translate-y-[-2px]">
-                {nd.Icon && <nd.Icon className="text-[18px]" />}
-              </div>
-              <div>{nd.name}</div>
-            </Link>
+              {nd.dropdown ? (
+                <div className="flex flex-col relative items-center cursor-pointer">
+                  <div className="flex items-center gap-2 max-lg:gap-1">
+                    <div className="translate-y-[0.5px]">
+                      {nd.Icon && <nd.Icon className="text-[18px]" />}
+                    </div>
+                    <div className="flex items-center gap-0.5">
+                      <div>{nd.name}</div>
+                      {nd.dropdown && (
+                        <div className="group-hover:rotate-180 group-hover:translate-y-[4px] transition-all">
+                          <IoMdArrowDropdown className="text-[25px] translate-y-[2px]" />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="hidden group-hover:flex absolute rotate-180 mt-[20px] transition-all">
+                    <IoMdArrowDropdown className="text-[40px]" />
+                  </div>
+                  <div className="hidden group-hover:flex group-hover:flex-col absolute pt-[44px]">
+                    <div className="w-[270px] py-4 px-5 rounded-sm bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] transition-all">
+                      {nd.dropdownItems!.map((di) => (
+                        <Link
+                          href={di.url}
+                          key={di.name}
+                          className="flex gap-2"
+                        >
+                          <div className="flex items-center">
+                            {di.Icon && <di.Icon className="text-[18px]" />}
+                          </div>
+                          <div>
+                            <div>{di.name}</div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  href={nd.url}
+                  className={`flex ${nd.Icon ? "gap-2" : ""} items-center`}
+                >
+                  <div className="translate-y-[0.5px]">
+                    {nd.Icon && <nd.Icon className="text-[18px]" />}
+                  </div>
+                  <div>
+                    <div>{nd.name}</div>
+                  </div>
+                </Link>
+              )}
+            </div>
           );
         })}
       </nav>
@@ -72,17 +119,19 @@ export const SmallNavContent = ({ open }: { open: boolean }) => {
         open ? "flex" : "hidden"
       } justify-center fixed bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] h-auto mt-[70px] w-full md:hidden transition-all z-[10000]`}
     >
-      <div className="flex flex-col gap-[5px] 2xl:max-w-[1400px] w-[90%] text-[color:var(--primary-color-2)] py-4">
-        {smallNavigationData.map((snd, i) => {
-          return (
-            <Link href={snd.url} key={i} className="flex gap-2 items-center">
-              <div>
-                <snd.Icon />
-              </div>
-              <div>{snd.name}</div>
-            </Link>
-          );
-        })}
+      <div className="flex bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] absolutetext-[color:var(--primary-color-2)] py-4 w-full justify-center">
+        <div className="2xl:max-w-[1400px] w-[90%] flex flex-col gap-[5px]">
+          {smallNavigationData.map((snd, i) => {
+            return (
+              <Link href={snd.url} key={i} className="flex gap-2 items-center">
+                <div>
+                  <snd.Icon />
+                </div>
+                <div>{snd.name}</div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );

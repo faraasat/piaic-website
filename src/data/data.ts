@@ -52,6 +52,7 @@ import {
   IFooterSocialsData,
   INavigationData,
   IAvailableCoursesData,
+  INavigationWithDropDown,
 } from "@/data";
 
 import {
@@ -80,7 +81,7 @@ import { IBootcamp } from "@/sections";
 
 import { Coding1, Coding2, Coding3 } from "@/internal-assets";
 
-export const navigationData: Array<INavigationData> = [
+export const navigationData: Array<INavigationWithDropDown> = [
   {
     name: "Home",
     url: "/",
@@ -90,6 +91,34 @@ export const navigationData: Array<INavigationData> = [
     name: "Available Programs",
     url: "/available-programs",
     Icon: MdEventAvailable,
+    dropdown: true,
+    dropdownItems: [
+      {
+        name: "Blockchain Development",
+        url: "/blockchain-development",
+        Icon: SiHiveBlockchain,
+      },
+      {
+        name: "Cloud Development",
+        url: "/cloud-development",
+        Icon: AiFillCloud,
+      },
+      {
+        name: "Artificial Intelligence",
+        url: "/artificial-intelligence",
+        Icon: AiFillRobot,
+      },
+      {
+        name: "Internet of Things",
+        url: "/internet-of-things",
+        Icon: FaBroadcastTower,
+      },
+      {
+        name: "Web3 and Metaverse",
+        url: "/web3-and-metaverse",
+        Icon: TbAugmentedReality2,
+      },
+    ],
   },
   {
     name: "About",

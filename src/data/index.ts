@@ -14,6 +14,7 @@ import {
   IFooterSocialsData,
   ISmallNavigationData,
   IAvailableCoursesData,
+  INavigationWithDropDown,
 } from "./data.d";
 
 export type {
@@ -22,6 +23,7 @@ export type {
   IFooterSocialsData,
   ISmallNavigationData,
   IAvailableCoursesData,
+  INavigationWithDropDown,
 };
 
 export {

@@ -4,6 +4,11 @@ export interface INavigationData {
   Icon?: any;
 }
 
+export interface INavigationWithDropDown extends INavigationData {
+  dropdown?: boolean;
+  dropdownItems?: Array<INavigationData>;
+}
+
 export interface IFooterQuickNavData {
   name: string;
   url: string;
