@@ -339,14 +339,14 @@ export const availableCoursesData: Array<IAvailableCoursesData> = [
     Img: Iot,
     alt: "iot",
   },
-  {
-    title: "4IR Innovation",
-    content:
-      "A NINE-MONTH SUPPLEMENTARY PROGRAM COMPULSORY FOR ALL PIAIC STUDENTS REQUIRED FROM THE 2ND QUARTER OF THE MAJOR COURSE OF STUDY. TRAINING INNOVATION LEADERS WITH A COMBINATION OF DIFFERENT LEADERSHIP STYLES TO INFLUENCE TEAM MEMBERS TO PRODUCE CREATIVE IDEAS, PRODUCTS, AND SERVICES.",
-    url: "/innovation-track",
-    Img: AiFillBulb,
-    alt: "innovation",
-  },
+  // {
+  //   title: "4IR Innovation",
+  //   content:
+  //     "A NINE-MONTH SUPPLEMENTARY PROGRAM COMPULSORY FOR ALL PIAIC STUDENTS REQUIRED FROM THE 2ND QUARTER OF THE MAJOR COURSE OF STUDY.",
+  //   url: "/innovation-track",
+  //   Img: AiFillBulb,
+  //   alt: "innovation",
+  // },
   {
     title: "Web3 and Metaverse",
     content:
