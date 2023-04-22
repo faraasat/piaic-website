@@ -80,7 +80,9 @@ const AvailableCourses = ({
           <LearningPath
             learningItems={learningItems}
             baseColor={colors["base"]}
-            technicalColors={colors["technical"]}
+            technicalColors={
+              technicalBlocks ? colors["technical"] : colors["innovative"]
+            }
           />
         </div>
       </div>

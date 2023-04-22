@@ -41,6 +41,34 @@ import Bd11 from "./bd-11.webp";
 import Bd12 from "./bd-12.webp";
 import Bd13 from "./bd-13.webp";
 import Bd14 from "./bd-14.webp";
+import Cd1 from "./cd-1.webp";
+import Cd2 from "./cd-2.webp";
+import Cd3 from "./cd-3.webp";
+import Cd4 from "./cd-4.webp";
+import Cd5 from "./cd-5.webp";
+import Cd6 from "./cd-6.webp";
+import Cd7 from "./cd-7.webp";
+import Cd8 from "./cd-8.webp";
+import Ai2 from "./ai-2.webp";
+import Ai3 from "./ai-3.webp";
+import Ai4 from "./ai-4.webp";
+import Ai5 from "./ai-5.webp";
+import Ai6 from "./ai-6.webp";
+import Ai9 from "./ai-9.webp";
+import Ai10 from "./ai-10.webp";
+import Ai11 from "./ai-11.webp";
+import Io1 from "./io-1.webp";
+import It1 from "./it-1.webp";
+import It2 from "./it-2.webp";
+import It3 from "./it-3.webp";
+import It4 from "./it-4.webp";
+import It7 from "./it-7.webp";
+import It8 from "./it-8.webp";
+import It10 from "./it-10.webp";
+import It11 from "./it-11.webp";
+import It12 from "./it-12.webp";
+import It13 from "./it-13.webp";
+import It14 from "./it-14.webp";
 
 export {
   Logo,
@@ -86,4 +114,32 @@ export {
   Bd12,
   Bd13,
   Bd14,
+  Cd1,
+  Cd2,
+  Cd3,
+  Cd4,
+  Cd5,
+  Cd6,
+  Cd7,
+  Cd8,
+  Ai2,
+  Ai3,
+  Ai4,
+  Ai5,
+  Ai6,
+  Ai9,
+  Ai10,
+  Ai11,
+  Io1,
+  It1,
+  It2,
+  It3,
+  It4,
+  It7,
+  It8,
+  It10,
+  It11,
+  It12,
+  It13,
+  It14,
 };
