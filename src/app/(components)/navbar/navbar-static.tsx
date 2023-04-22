@@ -56,14 +56,16 @@ export const MainNavWrapper = ({
               {nd.dropdown ? (
                 <div className="flex flex-col relative items-center cursor-pointer">
                   <div className="flex items-center gap-2 max-lg:gap-1">
-                    <div className="translate-y-[0.5px]">
+                    <div className="flex items-center">
                       {nd.Icon && <nd.Icon className="text-[18px]" />}
                     </div>
                     <div className="flex items-center gap-0.5">
-                      <div>{nd.name}</div>
+                      <div className="flex items-center leading-[1] translate-y-[3px]">
+                        {nd.name}
+                      </div>
                       {nd.dropdown && (
-                        <div className="group-hover:rotate-180 group-hover:translate-y-[4px] transition-all">
-                          <IoMdArrowDropdown className="text-[25px] translate-y-[2px]" />
+                        <div className="flex items-center group-hover:rotate-180 group-hover:translate-y-[2px] transition-all">
+                          <IoMdArrowDropdown className="text-[25px] translate-y-[1px]" />
                         </div>
                       )}
                     </div>
@@ -72,19 +74,17 @@ export const MainNavWrapper = ({
                     <IoMdArrowDropdown className="text-[40px]" />
                   </div>
                   <div className="hidden group-hover:flex group-hover:flex-col absolute pt-[44px]">
-                    <div className="w-[270px] py-4 px-5 rounded-sm bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] transition-all">
+                    <div className="w-[270px] py-4 px-5 gap-5 rounded-sm bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] transition-all">
                       {nd.dropdownItems!.map((di) => (
                         <Link
                           href={di.url}
                           key={di.name}
-                          className="flex gap-2"
+                          className="flex gap-2 max-lg:gap-1 items-center"
                         >
                           <div className="flex items-center">
                             {di.Icon && <di.Icon className="text-[18px]" />}
                           </div>
-                          <div>
-                            <div>{di.name}</div>
-                          </div>
+                          <div className="flex items-center">{di.name}</div>
                         </Link>
                       ))}
                     </div>
@@ -93,13 +93,15 @@ export const MainNavWrapper = ({
               ) : (
                 <Link
                   href={nd.url}
-                  className={`flex ${nd.Icon ? "gap-2" : ""} items-center`}
+                  className={`flex${
+                    nd.Icon ? " gap-2 max-lg:gap-1" : ""
+                  } items-center`}
                 >
-                  <div className="translate-y-[0.5px]">
+                  <div className="flex items-center">
                     {nd.Icon && <nd.Icon className="text-[18px]" />}
                   </div>
-                  <div>
-                    <div>{nd.name}</div>
+                  <div className="flex items-center leading-[1] translate-y-[3px]">
+                    {nd.name}
                   </div>
                 </Link>
               )}

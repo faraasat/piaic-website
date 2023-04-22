@@ -1,11 +1,10 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import { useState } from "react";
 
-import { useTheme } from "next-themes";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-import { BsMoonFill, BsSun } from "react-icons/bs";
 
 import {
   HeaderWrapper,
@@ -13,9 +12,10 @@ import {
   SmallNavContent,
 } from "./navbar-static";
 
+const NavbarTheme = dynamic(() => import("./navbar-theme"), { ssr: false });
+
 const NavbarAction = () => {
   const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   return (
     <HeaderWrapper>
@@ -26,20 +26,8 @@ const NavbarAction = () => {
         >
           <GiHamburgerMenu className="text-[25px]" />
         </div>
-        <div className="cursor-pointer ml-5">
-          {theme === "dark" ? (
-            <BsSun
-              title="light"
-              className="fill-yellow-400 text-[25px]"
-              onClick={() => setTheme("light")}
-            />
-          ) : (
-            <BsMoonFill
-              title="dark"
-              className="fill-slate-400 text-[25px]"
-              onClick={() => setTheme("dark")}
-            />
-          )}
+        <div className="cursor-pointer ml-5" suppressHydrationWarning={true}>
+          <NavbarTheme />
         </div>
       </MainNavWrapper>
       <SmallNavContent open={open} />

@@ -7,7 +7,7 @@ function ThemeProvider({
 }: {
   children?: JSX.Element | JSX.Element[];
 }) {
-  return <NextThemes>{children}</NextThemes>;
+  return <NextThemes attribute="class">{children}</NextThemes>;
 }
 
 export default ThemeProvider;

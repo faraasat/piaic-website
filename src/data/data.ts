@@ -53,10 +53,30 @@ import {
   INavigationData,
   IAvailableCoursesData,
   INavigationWithDropDown,
+  IAvailableCoursesPageData,
 } from "@/data";
 
 import {
+  AcBg1,
+  AcBg2,
+  AcBg3,
+  AcBg4,
+  AcBg5,
   Ai,
+  Bd1,
+  Bd10,
+  Bd11,
+  Bd12,
+  Bd13,
+  Bd14,
+  Bd2,
+  Bd3,
+  Bd4,
+  Bd5,
+  Bd6,
+  Bd7,
+  Bd8,
+  Bd9,
   Blockchain,
   Cloud,
   Instructor1,
@@ -69,6 +89,7 @@ import {
   Instructor8,
   Instructor9,
   Iot,
+  Logo,
   Metaverse,
   P1,
   P2,
@@ -115,7 +136,7 @@ export const navigationData: Array<INavigationWithDropDown> = [
       },
       {
         name: "Web3 and Metaverse",
-        url: "/web3-and-metaverse",
+        url: "https://panaverse-farasat.vercel.app",
         Icon: TbAugmentedReality2,
       },
     ],
@@ -159,7 +180,7 @@ export const footerQuickNavData: Array<IFooterQuickNavData> = [
   },
   {
     name: "Web3 and Metaverse",
-    url: "/web3-and-metaverse",
+    url: "https://panaverse-farasat.vercel.app",
   },
   {
     name: "About",
@@ -222,7 +243,7 @@ export const smallNavigationData: Array<INavigationData> = [
   },
   {
     name: "Web3 and Metaverse",
-    url: "/web3-and-metaverse",
+    url: "https://panaverse-farasat.vercel.app",
     Icon: TbAugmentedReality2,
   },
   {
@@ -263,7 +284,7 @@ export const availableCoursesData: Array<IAvailableCoursesData> = [
     title: "AI and ML",
     content:
       "A ONE YEAR AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI.",
-    url: "/ai-and-ml",
+    url: "/artificial-intelligence",
     Img: Ai,
     alt: "ai and ml",
   },
@@ -279,7 +300,7 @@ export const availableCoursesData: Array<IAvailableCoursesData> = [
     title: "Web3 and Metaverse",
     content:
       "Getting Ready for the Next Generation and Future of the Internet - Join a 13 Trillion Dollar Industry with 5 Billion Users.",
-    url: "web3-and-metaverse",
+    url: "https://panaverse-farasat.vercel.app",
     Img: Metaverse,
     alt: "web3 and metaverse",
   },
@@ -687,4 +708,572 @@ export const metaverseCourseData: IBootcamp = {
     },
   ],
   nonContentLink: "https://www.panaverse.co/",
+};
+
+export const availableCoursesPageData: IAvailableCoursesPageData = {
+  "blockchain-development": {
+    title: "Blockchain Development",
+    desc: "A ONE YEAR BLOCKCHAIN PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF BLOCKCHAIN, FINTECH AND SMART CONTRACTS",
+    colors: {
+      technical: ["#aa4cff", "#9944e6", "#883dcc", "#7735b3"],
+      innovative: ["#f8b9e1", "#f48bcd", "#ef5cb9"],
+      base: "#662e99",
+    },
+    Img: AcBg1,
+    programDets: "Four Quarters of Blockchain Course Work",
+    technicalBlocks: [
+      {
+        title: "Quarter 1",
+        desc: "Foundations of Blockchain",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Smart Contract Development",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Dapp Development",
+      },
+      {
+        title: "Quarter 4",
+        desc: "Advanced Blockchain Topics",
+      },
+    ],
+    innovationBlock: [
+      {
+        title: "Quarter 1",
+        desc: "Innovation Methodologies",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Infrastructure as Code DevOps",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Lean UI/UX and Bot Design",
+      },
+    ],
+    learningItems: [
+      {
+        id: "1A",
+        title: "Digital Money, Bitcoin and Blockchain",
+        Img: Bd1,
+        desc: "In this module, students will get an introduction to digital money, bitcoin and the blockchain. Students will learn about trestles systems and proof of work. Students will also learn the difference between private, consortium, and public blockchai networks. This module will also provide an introduction to hashing and cryptography.",
+        colorId: 1,
+      },
+      {
+        id: "1B",
+        title: "Crypto Tokens",
+        Img: Bd2,
+        desc: "In this module, students will learn about crypto tokens, how intrinsic tokens come into existence, how bitcoins, ripples, ethereal, and NXT come into existence. Students will also learn the difference between utility and security tokens. This module will also cover the legal implications of token classification. Students will also learn the eight categories of tokens. In this module, students will learn how to create their own utility tokens.",
+        colorId: 1,
+      },
+      {
+        id: "1C",
+        title: "Blockchain Revolution",
+        Img: Bd3,
+        desc: "In this module, students will learn how permissionless systems work. Students will also learn about enterprise blockchain and the future of finance. This module will cover how blockchain can disrupt industries including finance, banking, insurance, and even music.",
+        colorId: 1,
+      },
+      {
+        id: "1D",
+        title: "Introduction to Decentralized Apps",
+        Img: Bd4,
+        desc: "In this module, students will learn about Ethereum, Decentralized Apps, Smart Contracts, and the EVM. Students will learn the benefits of the Ethereum Decentralized Platform and the fourth generation blockchain.",
+        colorId: 1,
+      },
+      {
+        id: "1E",
+        title: "Ethereum and Hyperledger Fabric Basics",
+        Img: Bd5,
+        desc: "In this module, students will learn about blockchain nodes and how to run them. Students will also learn about the Ethereum ecosystem, Mist, and Faucets. After this completing this module, students will be able to compile, deploy and instantiate contracts. Students will also have an understanding of the different stages of a contract deployment.",
+        colorId: 1,
+      },
+      {
+        id: "1F",
+        title: "Crypto Mining and Operations",
+        Img: Bd6,
+        desc: "In this module students will learn the process by which Bitcoins are mined and what roles do miners play in creation of Bitcoins. The details of this module would help students understand in great details how various mining strategies are applied by various miners and the powerful hardware custom built for mining. The students would also learn about the role of consensus in mining and the 51% attacks, how the incentives of mining attract miners and the energy consumption and ecological impact of mining.",
+        colorId: 1,
+      },
+      {
+        id: "2A",
+        title: "Introduction to Smart Contracts",
+        Img: Bd7,
+        desc: "In this module students will be introduced to the programming and development side of Blockchain, especially that of Ethereum. The students will learn how to use a Remix IDE to program in Solidity. The students will go over various Blockchain concepts again such as Blockchain Basics, Blockchain Transactions, and Blockchain Blocks. The students will learn the infrastructural concepts of the Ethereum Blockchain, such as The Ethereum Virtual Machine, how Ethereum Accounts are formed and how Ethereum Transactions occur. They will also go over other concepts like Gas, Storage, Memory and the Stack, Instruction Set, Message Calls, Delegatecall / Callcode and Libraries, Logs, Creating contracts, and Self-destruct.",
+        colorId: 2,
+      },
+      {
+        id: "2B",
+        title: "Solidity in Depth",
+        Img: Bd8,
+        desc: "In this module students will take an in depth look at Solidity language and learn about concepts like mapping, data types, events, operators, parameters, control structures, and error handling.Students will also begin creating Solidity contracts, event handling and layout of memory and storage variables.",
+        colorId: 2,
+      },
+      {
+        id: "3A",
+        title: "HTML, CSS, and JavaScriptCrash Course",
+        Img: Bd9,
+        desc: "In this module the students finally move over to Dapp development. To accomodate Dapp development students will be given a crash course in HTML, CSS, and JavaScript and taught about various concepts of javascript in depth to help understand the interaction of Solidity and Web3.js",
+        colorId: 3,
+      },
+      {
+        id: "3B",
+        title: "Blockchain WebApplications",
+        Img: Bd10,
+        desc: "The students will now be ready to develop a front-end for Solidity contracts. They’ll be taught about the Basics of React, REST API’s, in Node.js, Using Nginx to host Single Page Apps, and using Docker to deploy web apps in the cloud.",
+        colorId: 3,
+      },
+      {
+        id: "3C",
+        title: "Web3 and Truffle",
+        Img: Bd11,
+        desc: "In this module the students will learn how to to work with Web3 & Truffle. They’ll also learn about toolkit to aid development of decentralised applications. This course introduces the two most currently relevant and covers everything from installation and setup to custom configuration and scripting. Building an interface to interact with a smart contract.Setting up event-driven interfaces. It also exposes the students to Adapting Truffle’s default behavior and Writing functional tests for smart contract.",
+        colorId: 3,
+      },
+      {
+        id: "4A",
+        title: "BaaS (Blockchain-as-a-Service)",
+        Img: Bd12,
+        desc: "The students will begin to finally finish off will very high level concepts in Solidity and Blockchain, such as BaaS (Blockchain-as-a-Service). Working with Azure Blockchain as a Service, Deploy an Ethereum Consortium network on Azure, DevOps for Blockchains on Azure, Trying out the Visual Studio Code extension for Smart Contracts, and Building Dapps with Visual Studio.",
+        colorId: 4,
+      },
+      {
+        id: "4B",
+        title: "The Art of Initial Coin Offering (ICO)",
+        Img: Bd13,
+        desc: "In this module the students will move over the the business side of Blockchain and learn about ICO. They will learn what is an ICO, how to create and verify Your Altcoin, What are steps in launching a ICO, how to write an ICO White Paper and how to do ICO marketing?",
+        colorId: 4,
+      },
+      {
+        id: "4C",
+        title:
+          "Blockchain Projects for Islamic Finance -A Match Made in Heaven",
+        Img: Bd14,
+        desc: "In the last module of this course the students will also get an opportunity to look at the Blockchain Projects for Islamic Finance. They will learn about developing Sharia-Compliant Financial and Blockchain Products, applications of Smart Contracts in Islamic Finance, private Chains in Islamic Banking, Emirates “Cheque Chain”, Islamic Trade Finance, Capital Markets-Musharaka Mutanaqisa (Diminishing Partnerships), as well as Automatic Sharia Compliance and Commodity Murabaha.",
+        colorId: 4,
+      },
+    ],
+  },
+  "cloud-development": {
+    title: "Cloud Development",
+    desc: "A ONE YEAR CLOUD COMPUTING PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. GETTING PAKISTAN READY FOR THE NEW ERA OF MICROSERVICES AND MULTI-CLOUD NATIVE COMPUTING.",
+    colors: {
+      technical: ["#f6c788", "#f2b159", "#ef9b2a", "#d58110"],
+      innovative: ["#f8b9e1", "#f48bcd", "#ef5cb9"],
+      base: "#a6640d",
+    },
+    Img: AcBg2,
+    programDets: "A four-quarter cloud computing program.",
+    technicalBlocks: [
+      {
+        title: "Quarter 1",
+        desc: "Cloud Native Computing Foundations",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Developing Cloud Native Microservices",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Kubernetes in Practice",
+      },
+      {
+        title: "Quarter 4",
+        desc: "AWS Application Development",
+      },
+    ],
+    innovationBlock: [
+      {
+        title: "Quarter 1",
+        desc: "Innovation Methodologies",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Infrastructure as Code DevOps",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Lean UI/UX and Bot Design",
+      },
+    ],
+    learningItems: [
+      {
+        id: "1A",
+        title: "Introduction to Cloud Native Computing",
+        Img: Bd1,
+        desc: "Cloud native computing uses open-source software stacks to deploy applications as microservices, packaging each part into its own container and dynamically orchestrating those containers to optimize resource utilization. In the last 15 years, cloud application delivery has moved from being bound to physical servers to running on virtual machines with a full operating system and now to containers with Docker, where developers can specify every aspect of deployment.",
+        colorId: 1,
+      },
+      {
+        id: "1B",
+        title: "Introduction to Linux and Bash using Python",
+        Img: Bd2,
+        desc: "Linux containers are poised to take over the world; we will start our course with an introduction of Linux and the command line. For many non-technical people, the command line (also referred to as CLI, Terminal, bash, or shell) is a place of mystery. However, you only have to know a handful of basic commands to start feeling comfortable. In this module we will cover the basic commands to get you started.",
+        colorId: 1,
+      },
+      {
+        id: "1C",
+        title: "Docker Deep Dive",
+        Img: Bd3,
+        desc: "This course provides a soup-to-nuts learning experience for core Docker technologies, including the Docker Engine, Images, Containers, Registries, Networking, Storage, and more. All of the behind the scenes theory is explained, and all concepts are clearly demonstrated on the command line. No prior knowledge of Docker or Linux is required.",
+        colorId: 1,
+      },
+      {
+        id: "1D",
+        title: "JavaScript/TypeScript Programming",
+        Img: Bd4,
+        desc: "JavaScript is the default language of the web and the first universal programming language. In this module, students will dig through all the genuinely elegant parts of JavaScript, including syntax, objects, functions, inheritance, arrays, methods, etc. This module will build a solid foundation in functional and object-oriented programming using JavaScript (ES 2016) and TypeScript using Node.js. Assuming no prior programming experience on the part of the student, this module starts by focusing on the fundamentals of composing code with JavaScript. Introduction to only server based JavaScript/TypeScript is covered i.e. Node.js. Students will also learn about the syntax and structure of the language including operators and expressions, control structures, methods, and arrays using Node.",
+        colorId: 1,
+      },
+      {
+        id: "2A",
+        title: "Developing Microservices using Node.js and Express",
+        Img: Bd7,
+        desc: "This module includes how to build microservices using Node.js. It starts by introducing Node’s powerful traits and shows students how they map to the features of microservices using JavaScript. Students will explore key development techniques, meet the rich ecosystem of companion tools and libraries, and get a glimpse into its inner workings. In recent years, REST (REpresentational State Transfer) has emerged as the standard architectural design for web services and web APIs. In this module, students will see how easy it is to create a RESTful web service using Node.js, TypeScript and the Express micro-framework. Students will also learn gRPC and GraphQL based microservices. By the end of the module, students will be able to use JavaScript/Typescript to build a Node microservice and know how to test it, hook it up to a database, and automate the development process.",
+        colorId: 2,
+      },
+      {
+        id: "2B",
+        title: "Version Control with Git",
+        Img: Bd8,
+        desc: "You won’t find a top programmer, cloud developer, or AI engineer who doesn’t use version control. This is true because version control helps developers produce better results and makes collaboration easy. Around the world, in teams both large and small, Git is an essential part of the toolchain. This module covers Git and Github.",
+        colorId: 2,
+      },
+      {
+        id: "2C",
+        title: "Cloud Automation using Ansible",
+        Img: Bd8,
+        desc: "Ansible is an open-source IT automation engine which can remove drudgery from work life and will also dramatically improve the scalability, consistency, and reliability of your IT environment. In this module, students will start to explore how to automate repetitive cloud administration tasks using Ansible.",
+        colorId: 2,
+      },
+      {
+        id: "3A",
+        title: "Kubernetes in Practice",
+        Img: Bd9,
+        desc: "The Kubernetes container orchestration system safely manages the structure and flow of a distributed application, organizing containers and services for maximum efficiency. Kubernetes serves as an operating system for your clusters, eliminating the need to factor the underlying network and server infrastructure into your designs. In this quarter, students will learn to use Kubernetes to deploy container-based distributed applications. The module will start with an overview of Docker and Kubernetes before building the first Kubernetes cluster. We’ll gradually expand the student's initial application, adding features and deepening knowledge of Kubernetes architecture and operation. Students will explore high-value topics like monitoring, tuning, and scaling. By the end of the quarter, students will be able to appear in the Certified Kubernetes Application Developer (CKAD) exam.",
+        colorId: 3,
+      },
+      {
+        id: "4A",
+        title: "Cloud Native Application Development",
+        desc: "In this quarter we will develop an understanding of core cloud native services, uses, and architecture best practices. We will develop proficiency in developing, deploying, and debugging cloud native applications using Istio, Knative, Prometheus, NATS, and TiKV, etc. We will also focus on understanding of application lifecycle management, ability to use a CI/CD pipeline to deploy applications, and ability to write code using cloud native security best practices.",
+        colorId: 4,
+      },
+    ],
+  },
+  "artificial-intelligence": {
+    title: "Artificial Intelligence",
+    desc: "A ONE YEAR AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI.",
+    colors: {
+      technical: ["#94eac3", "#6ae2ab", "#3fd993", "#26c07a"],
+      innovative: ["#f8b9e1", "#f48bcd", "#ef5cb9"],
+      base: "#1d955f",
+    },
+    Img: AcBg3,
+    programDets:
+      "A four-quarter AI program in Data Science, Machine Learning, and Deep Learning.",
+    technicalBlocks: [
+      {
+        title: "Quarter 1",
+        desc: "AI Foundations",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Introduction to Data Science & Deep Learning",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Deploying AI Solutions",
+      },
+      {
+        title: "Quarter 4",
+        desc: "AI In Practice",
+      },
+    ],
+    innovationBlock: [
+      {
+        title: "Quarter 1",
+        desc: "Innovation Methodologies",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Infrastructure as Code DevOps",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Lean UI/UX and Bot Design",
+      },
+    ],
+    learningItems: [
+      {
+        id: "1A",
+        title: "Version Control with Git",
+        Img: Bd1,
+        desc: "You won't find a top programmer, web developer, or AI engineer who doesn't use version control. This is true because version control helps developers produce better results and makes collaboration easy. Around the world, in teams both large and small, Git is an essential part of the toolchain. This module covers Git and Github.",
+        colorId: 1,
+      },
+      {
+        id: "1B",
+        title: "Object Oriented and Functional Programming using Python",
+        Img: Bd2,
+        desc: "In the second module of the program, students will learn about basic programming concepts such as lists, dictionaries, classes, functions and loops, and practice writing clean and readable code with exercises for each topic. Students will also learn how to make programs interactive and how to test code safely before adding it to a project. It is a fast-paced, thorough introduction to programming with Python 3.6 that will have students writing programs, solving problems, and making things that work in no time.",
+        colorId: 1,
+      },
+      {
+        id: "1C",
+        title: "Introduction to Linear Algebra and Statistics",
+        Img: Bd3,
+        desc: "In this module, students will learn the basic mathematical and statistical concepts that are needed to practice data science and understand deep learning. Students will also implement these concepts in Python and TensorFlow.",
+        colorId: 1,
+      },
+      {
+        id: "2A",
+        title: "Advanced Python Libraries with Anaconda",
+        Img: Bd7,
+        desc: "In this module, students will be introduced to Anaconda, the leading open data science platform powered by Python. The open source version of Anaconda is a high performance distribution of Python and R and includes over 100 of the most popular Python and R packages for data science, such as NumPy, Matplotlib, etc.",
+        colorId: 2,
+      },
+      {
+        id: "2B",
+        title: "Data Science Essentials",
+        Img: Bd8,
+        desc: "In this module, students will learn key concepts and techniques used to perform data science; including statistical analysis, data cleansing and transformation, and data visualization with Python.",
+        colorId: 2,
+      },
+      {
+        id: "2B",
+        title:
+          "The Fundamentals of Deep Learning with Keras with TensorFlow Backend",
+        Img: Bd8,
+        desc: "Before implementing deep-learning algorithms, students will first become familiar with the mathematical blocks of the neural networks theory. Students will get a chance to get their hands dirty writing some simple Keras code right away! Then they will move on to advanced deep learning concepts. This module will also cover some essential advantages of Keras to prove it’s the deep-learning library of choice.",
+        colorId: 2,
+      },
+      {
+        id: "3A",
+        title: "Introduction to Linux and Bash",
+        Img: Bd9,
+        desc: "Linux containers are poised to take over the world. In this module, students will begin learning with an introduction of Linux and the command line interface. For many non-technical people, the command line (also referred to as CLI, Terminal, bash, or shell) is a place of mystery. However, knowledge of only a handful of basic commands is enough to start feeling comfortable. In this module, we will cover the basic commands to get you started.",
+        colorId: 3,
+      },
+      {
+        id: "3B",
+        title: "Docker Deep Dive",
+        Img: Bd10,
+        desc: "This module provides a soup-to-nuts learning experience for core Docker technologies, including the Docker Engine, Images, Containers, Registries, Networking, Storage, and more. All of the behind the scenes theory is explained, and all concepts are clearly demonstrated on the command line. No prior knowledge of Docker or Linux is required.",
+        colorId: 3,
+      },
+      {
+        id: "3C",
+        title: "Python Microservices Development",
+        Img: Bd11,
+        desc: "In recent years, REST (REpresentational State Transfer) has emerged as the standard architectural design for web services and web APIs. In this module, students will learn how easy it is to create a RESTfulweb service using Python and Flask.",
+        colorId: 3,
+      },
+      {
+        id: "3C",
+        title: "Build AI Microservices for ContainerDeployments",
+        Img: Bd11,
+        desc: "In this module, students will learn to use containers to simplify AI solution deployments and implement continuous integration and deployment strategies.",
+        colorId: 3,
+      },
+      {
+        id: "4A",
+        title: "Artificial Intelligence (AI) in Practice",
+        Img: Bd12,
+        desc: "This module is structured around a series of practical code examples, demonstrating on real world problems. PIAIC strongly believes in the value of teaching using concrete examples, anchoring theoretical ideas into actual results and tangible code patterns. These examples all rely on Keras, the Python deep learning library. Students will learn Deep Learning for computer vision, text and sequences, finance, and advanced neural network design.",
+        colorId: 4,
+      },
+    ],
+  },
+  "internet-of-things": {
+    title: "Internet of Things",
+    desc: "A ONE YEAR BLOCKCHAIN PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF BLOCKCHAIN, FINTECH AND SMART A FIFTEEN MONTHS IOT AND AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF INTERNET OF THINGS AND AI",
+    colors: {
+      technical: [
+        "#85f0fa",
+        "#54eaf8",
+        "#23e4f6",
+        "#09cadc",
+        "#079dab",
+        "#05707a",
+      ],
+      innovative: ["#f8b9e1", "#f48bcd", "#ef5cb9"],
+      base: "#034349",
+    },
+    Img: AcBg4,
+    programDets: "Six Quarters of IOT Course Work",
+    technicalBlocks: [
+      {
+        title: "Quarter 1",
+        desc: "Introduction to IoT Concepts and Rust Programming",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Embedded Rust and Real-time Systems Programming",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Micro Services Development for IoT Edge and IoT Cloud using Web Assembly, Node.js, Docker and KubeEdge technologies",
+      },
+      {
+        title: "Quarter 4",
+        desc: "Voice Computing for Device Control",
+      },
+      {
+        title: "Quarter 5",
+        desc: "Artificial Intelligence (AI) for Internet of Things (IoT)",
+      },
+      {
+        title: "Quarter 6",
+        desc: "Blockchain and IOTA Technologies for IoT (Optional)",
+      },
+    ],
+    innovationBlock: [
+      {
+        title: "Quarter 1",
+        desc: "Innovation Methodologies",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Infrastructure as Code DevOps",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Lean UI/UX and Bot Design",
+      },
+    ],
+    learningItems: [
+      {
+        id: "1A",
+        title: "Digital Money, Bitcoin and Blockchain",
+        Img: Bd1,
+        desc: "In this module, students will get an introduction to digital money, bitcoin and the blockchain. Students will learn about trestles systems and proof of work. Students will also learn the difference between private, consortium, and public blockchai networks. This module will also provide an introduction to hashing and cryptography.",
+        colorId: 1,
+      },
+      {
+        id: "1B",
+        title: "Crypto Tokens",
+        Img: Bd2,
+        desc: "In this module, students will learn about crypto tokens, how intrinsic tokens come into existence, how bitcoins, ripples, ethereal, and NXT come into existence. Students will also learn the difference between utility and security tokens. This module will also cover the legal implications of token classification. Students will also learn the eight categories of tokens. In this module, students will learn how to create their own utility tokens.",
+        colorId: 1,
+      },
+      {
+        id: "1C",
+        title: "Blockchain Revolution",
+        Img: Bd3,
+        desc: "In this module, students will learn how permissionless systems work. Students will also learn about enterprise blockchain and the future of finance. This module will cover how blockchain can disrupt industries including finance, banking, insurance, and even music.",
+        colorId: 1,
+      },
+      {
+        id: "1D",
+        title: "Introduction to Decentralized Apps",
+        Img: Bd4,
+        desc: "In this module, students will learn about Ethereum, Decentralized Apps, Smart Contracts, and the EVM. Students will learn the benefits of the Ethereum Decentralized Platform and the fourth generation blockchain.",
+        colorId: 1,
+      },
+      {
+        id: "1E",
+        title: "Ethereum and Hyperledger Fabric Basics",
+        Img: Bd5,
+        desc: "In this module, students will learn about blockchain nodes and how to run them. Students will also learn about the Ethereum ecosystem, Mist, and Faucets. After this completing this module, students will be able to compile, deploy and instantiate contracts. Students will also have an understanding of the different stages of a contract deployment.",
+        colorId: 1,
+      },
+      {
+        id: "1F",
+        title: "Crypto Mining and Operations",
+        Img: Bd6,
+        desc: "In this module students will learn the process by which Bitcoins are mined and what roles do miners play in creation of Bitcoins. The details of this module would help students understand in great details how various mining strategies are applied by various miners and the powerful hardware custom built for mining. The students would also learn about the role of consensus in mining and the 51% attacks, how the incentives of mining attract miners and the energy consumption and ecological impact of mining.",
+        colorId: 1,
+      },
+      {
+        id: "2A",
+        title: "Introduction to Smart Contracts",
+        Img: Bd7,
+        desc: "In this module students will be introduced to the programming and development side of Blockchain, especially that of Ethereum. The students will learn how to use a Remix IDE to program in Solidity. The students will go over various Blockchain concepts again such as Blockchain Basics, Blockchain Transactions, and Blockchain Blocks. The students will learn the infrastructural concepts of the Ethereum Blockchain, such as The Ethereum Virtual Machine, how Ethereum Accounts are formed and how Ethereum Transactions occur. They will also go over other concepts like Gas, Storage, Memory and the Stack, Instruction Set, Message Calls, Delegatecall / Callcode and Libraries, Logs, Creating contracts, and Self-destruct.",
+        colorId: 2,
+      },
+      {
+        id: "2B",
+        title: "Solidity in Depth",
+        Img: Bd8,
+        desc: "In this module students will take an in depth look at Solidity language and learn about concepts like mapping, data types, events, operators, parameters, control structures, and error handling.Students will also begin creating Solidity contracts, event handling and layout of memory and storage variables.",
+        colorId: 2,
+      },
+      {
+        id: "3A",
+        title: "HTML, CSS, and JavaScriptCrash Course",
+        Img: Bd9,
+        desc: "In this module the students finally move over to Dapp development. To accomodate Dapp development students will be given a crash course in HTML, CSS, and JavaScript and taught about various concepts of javascript in depth to help understand the interaction of Solidity and Web3.js",
+        colorId: 3,
+      },
+      {
+        id: "3B",
+        title: "Blockchain WebApplications",
+        Img: Bd10,
+        desc: "The students will now be ready to develop a front-end for Solidity contracts. They’ll be taught about the Basics of React, REST API’s, in Node.js, Using Nginx to host Single Page Apps, and using Docker to deploy web apps in the cloud.",
+        colorId: 3,
+      },
+      {
+        id: "3C",
+        title: "Web3 and Truffle",
+        Img: Bd11,
+        desc: "In this module the students will learn how to to work with Web3 & Truffle. They’ll also learn about toolkit to aid development of decentralised applications. This course introduces the two most currently relevant and covers everything from installation and setup to custom configuration and scripting. Building an interface to interact with a smart contract.Setting up event-driven interfaces. It also exposes the students to Adapting Truffle’s default behavior and Writing functional tests for smart contract.",
+        colorId: 3,
+      },
+      {
+        id: "4A",
+        title: "BaaS (Blockchain-as-a-Service)",
+        Img: Bd12,
+        desc: "The students will begin to finally finish off will very high level concepts in Solidity and Blockchain, such as BaaS (Blockchain-as-a-Service). Working with Azure Blockchain as a Service, Deploy an Ethereum Consortium network on Azure, DevOps for Blockchains on Azure, Trying out the Visual Studio Code extension for Smart Contracts, and Building Dapps with Visual Studio.",
+        colorId: 4,
+      },
+      {
+        id: "4B",
+        title: "The Art of Initial Coin Offering (ICO)",
+        Img: Bd13,
+        desc: "In this module the students will move over the the business side of Blockchain and learn about ICO. They will learn what is an ICO, how to create and verify Your Altcoin, What are steps in launching a ICO, how to write an ICO White Paper and how to do ICO marketing?",
+        colorId: 4,
+      },
+      {
+        id: "4C",
+        title:
+          "Blockchain Projects for Islamic Finance -A Match Made in Heaven",
+        Img: Bd14,
+        desc: "In the last module of this course the students will also get an opportunity to look at the Blockchain Projects for Islamic Finance. They will learn about developing Sharia-Compliant Financial and Blockchain Products, applications of Smart Contracts in Islamic Finance, private Chains in Islamic Banking, Emirates “Cheque Chain”, Islamic Trade Finance, Capital Markets-Musharaka Mutanaqisa (Diminishing Partnerships), as well as Automatic Sharia Compliance and Commodity Murabaha.",
+        colorId: 4,
+      },
+    ],
+  },
+  "innovation-track": {
+    title: "Blockchain Development",
+    desc: "A ONE YEAR BLOCKCHAIN PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS GETTING PAKISTAN READY FOR THE NEW ERA OF BLOCKCHAIN, FINTECH AND SMART CONTRACTS",
+    colors: {
+      innovative: ["#f8b9e1", "#f48bcd", "#ef5cb9"],
+    },
+    Img: AcBg5,
+    programDets: "Four Quarters of Blockchain Course Work",
+    innovationBlock: [
+      {
+        title: "Quarter 1",
+        desc: "Innovation Methodologies",
+      },
+      {
+        title: "Quarter 2",
+        desc: "Infrastructure as Code DevOps",
+      },
+      {
+        title: "Quarter 3",
+        desc: "Lean UI/UX and Bot Design",
+      },
+    ],
+    learningItems: [
+      {
+        id: "1A",
+        title: "Digital Money, Bitcoin and Blockchain",
+        Img: Logo,
+        desc: "In this module, students will get an introduction to digital money, bitcoin and the blockchain. Students will learn about trestles systems and proof of work. Students will also learn the difference between private, consortium, and public blockchai networks. This module will also provide an introduction to hashing and cryptography.",
+      },
+    ],
+  },
 };

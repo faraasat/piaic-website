@@ -22,6 +22,25 @@ import P4 from "./p4.webp";
 import P5 from "./p5.webp";
 import Panacloud from "./panacloud.svg";
 import Saylani from "./saylani.png";
+import AcBg1 from "./ac-bg-1.webp";
+import AcBg2 from "./ac-bg-2.webp";
+import AcBg3 from "./ac-bg-3.webp";
+import AcBg4 from "./ac-bg-4.webp";
+import AcBg5 from "./ac-bg-5.webp";
+import Bd1 from "./bd-1.webp";
+import Bd2 from "./bd-2.webp";
+import Bd3 from "./bd-3.webp";
+import Bd4 from "./bd-4.webp";
+import Bd5 from "./bd-5.webp";
+import Bd6 from "./bd-6.webp";
+import Bd7 from "./bd-7.webp";
+import Bd8 from "./bd-8.webp";
+import Bd9 from "./bd-9.webp";
+import Bd10 from "./bd-10.webp";
+import Bd11 from "./bd-11.webp";
+import Bd12 from "./bd-12.webp";
+import Bd13 from "./bd-13.webp";
+import Bd14 from "./bd-14.webp";
 
 export {
   Logo,
@@ -48,4 +67,23 @@ export {
   P5,
   Panacloud,
   Saylani,
+  AcBg1,
+  AcBg2,
+  AcBg3,
+  AcBg4,
+  AcBg5,
+  Bd1,
+  Bd2,
+  Bd3,
+  Bd4,
+  Bd5,
+  Bd6,
+  Bd7,
+  Bd8,
+  Bd9,
+  Bd10,
+  Bd11,
+  Bd12,
+  Bd13,
+  Bd14,
 };

@@ -15,6 +15,9 @@ import {
   ISmallNavigationData,
   IAvailableCoursesData,
   INavigationWithDropDown,
+  IAvailableCoursesPageData,
+  CourseKeyT,
+  IBlockColors,
 } from "./data.d";
 
 export type {
@@ -24,6 +27,9 @@ export type {
   ISmallNavigationData,
   IAvailableCoursesData,
   INavigationWithDropDown,
+  IAvailableCoursesPageData,
+  CourseKeyT,
+  IBlockColors,
 };
 
 export {
