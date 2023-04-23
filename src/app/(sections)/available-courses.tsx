@@ -3,6 +3,7 @@ import { CardWithBg } from "@/components";
 import { availableCoursesData } from "@/data";
 
 import { Wave1 } from "@/internal-assets";
+import { FlowAnimation } from "../(animations)";
 
 const AvailableCourses = () => {
   return (
@@ -14,12 +15,33 @@ const AvailableCourses = () => {
         <Wave1 fillColor="var(--primary-color-7)" />
       </div>
       <div className="flex 2xl:max-w-[1400px] w-[90%] flex-col h-full my-[60px] max-md:w-[95%]">
-        <h1 className="self-center text-[50px] text-[color:var(--primary-color-1)] font-black max-md:text-[40px]">
-          Available Programs
-        </h1>
+        <FlowAnimation
+          transitionDuration={0.5}
+          initialY={"-200%"}
+          finalY={"0%"}
+          once={true}
+          className="flex items-center self-center"
+        >
+          <h1 className="text-[50px] text-[color:var(--primary-color-1)] font-black max-md:text-[40px]">
+            Available Programs
+          </h1>
+        </FlowAnimation>
         <div className="grid grid-cols-3 gap-[5%] mt-[30px] mb-6 max-xl:gap-[10px] max-lg:gap-[30px] max-lg:grid-cols-2 max-lg:mb-10 max-lg:h-auto max-sm:grid-cols-1 max-sm:gap-[10px] max-xs:gap-[5px]">
           {availableCoursesData.map((acd, i) => {
-            return <CardWithBg {...acd} key={i} />;
+            return (
+              <FlowAnimation
+                transitionDuration={0.7}
+                transitionDelay={
+                  (i + i + 2) / availableCoursesData.length + 0.5
+                }
+                initialX={"-100%"}
+                finalX={"0%"}
+                className="flex justify-center items-center"
+                key={i}
+              >
+                <CardWithBg {...acd} />
+              </FlowAnimation>
+            );
           })}
         </div>
       </div>

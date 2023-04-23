@@ -5,18 +5,20 @@ import { Typewriter } from "@/components";
 
 import { Fg1 } from "@/assets";
 
+// import { FlowAnimation } from "@/animations";
+
 const HomeSection = () => {
   return (
     <section
       id="home"
-      className="flex relative justify-center h-[750px] py-10 w-full bg-gradient-to-b from-[color:var(--primary-color-5)] to-[color:var(--primary-color-6)] max-xl:h-[780px] max-lg:h-auto max-lg:pb-20 max-sm:py-5"
+      className="flex relative justify-center h-[810px] pb-10 pt-[100px] max-md:pt-140px w-full bg-gradient-to-b from-[color:var(--primary-color-5)] to-[color:var(--primary-color-6)] max-xl:h-[840px] max-lg:h-auto max-lg:pb-20 max-sm:py-5"
     >
       <div
         className="absolute h-full w-full top-0 left-0 bg-no-repeat bg-bottom bg-cover z-20"
         style={{ backgroundImage: "url(bg1.png)" }}
       />
       <div className="relative flex 2xl:max-w-[1400px] w-[90%] justify-between h-full mt-[20px] mb-[40px] z-[100] max-lg:flex-col-reverse max-lg:items-center max-lg:justify-center max-lg:text-center max-md:w-[95%] max-sm:mt-0 max-sm:mb-[35px]">
-        <div className="w-[calc(100%-450px-50px-10px)] flex flex-col justify-center max-xl:w-[calc(100%-430px-50px-10px)] max-lg:w-full">
+        <div className="relative w-[calc(100%-450px-50px-10px)] flex flex-col justify-center max-xl:w-[calc(100%-430px-50px-10px)] max-lg:w-full">
           <h2 className="text-[65px] leading-none font-black text-[color:var(--primary-color-1)] max-xl:text-[60px] max-xl:leading-[1] max-xl:mb-[10px] max-md:text-[45px] max-sm:text-[38px]">
             Presidential Intitiative
           </h2>
@@ -55,7 +57,7 @@ const HomeSection = () => {
               Available Programs
             </Link>
             <Link
-              href={"/apply"}
+              href={"https://portal.piaic.org/signup"}
               target="_blank"
               className="text-[color:var(--primary-color-3)] border border-[color:var(--primary-color-3)] py-2 px-4 rounded-md text-[22px] cursor-pointer"
             >
@@ -63,8 +65,9 @@ const HomeSection = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[450px] flex relative items-center scale-x-[-1] translate-y-[-60px] max-xl:translate-y-[-40px] max-xl:w-[430px] max-lg:h-[420px] max-lg:w-[270px] max-lg:translate-y-[0px] max-sm:h-[300px] max-sm:w-[200px]">
+        <div className="w-[450px] flex relative items-center scale-x-[-1] translate-y-[-60px] max-xl:translate-y-[-40px] max-xl:w-[430px] max-lg:h-[420px] max-lg:w-[270px] max-lg:translate-y-[0px] max-sm:h-[300px] max-sm:w-[200px] opacity-100">
           <Image
+            key="piaic-president-image"
             src={Fg1}
             alt="piaic president"
             fill

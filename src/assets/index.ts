@@ -69,6 +69,7 @@ import It11 from "./it-11.webp";
 import It12 from "./it-12.webp";
 import It13 from "./it-13.webp";
 import It14 from "./it-14.webp";
+import About from "./about.webp";
 
 export {
   Logo,
@@ -142,4 +143,5 @@ export {
   It12,
   It13,
   It14,
+  About,
 };

@@ -2,7 +2,7 @@ import { AvailableCourses, Bootcamp, HomeSection, Partners } from "@/sections";
 
 import { bootcampData, metaverseCourseData } from "@/data";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="flex flex-col">
       <HomeSection />
@@ -14,4 +14,6 @@ export default function Home() {
       <Partners />
     </div>
   );
-}
+};
+
+export default Home;

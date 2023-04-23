@@ -24,6 +24,7 @@
       "@/components": ["./src/app/(components)"],
       "@/providers": ["./src/app/(providers)"],
       "@/sections": ["./src/app/(sections)"],
+      "@/animations": ["./src/app/(animations)"],
       "@/internal-assets": ["./src/app/(internal-assets)"]
     }
   },

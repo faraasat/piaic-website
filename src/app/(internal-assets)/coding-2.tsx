@@ -1,6 +1,6 @@
 import React from "react";
 
-function Coding2() {
+const Coding2 = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
       <g>

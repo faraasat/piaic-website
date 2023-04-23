@@ -49,6 +49,8 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
+  border: none;
+  outline: none;
 }
 
 ::-webkit-scrollbar-track {

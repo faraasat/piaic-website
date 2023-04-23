@@ -63,23 +63,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={`${montserrat.variable}  ${josefin_sans.variable}`}>
         <ThemeProvider>
           <Navbar />
-          <main className="flex flex-col pt-[60px] max-md:pt-[80px]">
-            {children}
-          </main>
+          <main className="flex flex-col">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

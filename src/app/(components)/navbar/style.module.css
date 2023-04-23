@@ -1,0 +1,30 @@
+.navbar {
+  opacity: 0;
+  top: -400px;
+  animation: flowDown 0.9s linear 0s 1 forwards;
+}
+
+@keyframes flowDown {
+  0% {
+    opacity: 0;
+    top: -400px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.navbar_brand {
+  opacity: 0;
+  animation: appear 0.5s linear 1.5s 1 forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

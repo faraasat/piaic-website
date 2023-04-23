@@ -182,12 +182,12 @@ export const navigationData: Array<INavigationWithDropDown> = [
   },
   {
     name: "Apply",
-    url: "/apply",
+    url: "https://portal.piaic.org/signup",
     Icon: HiAcademicCap,
   },
   {
     name: "Portal",
-    url: "/portal",
+    url: "https://portal.piaic.org/",
   },
 ];
 
@@ -226,11 +226,11 @@ export const footerQuickNavData: Array<IFooterQuickNavData> = [
   },
   {
     name: "Apply",
-    url: "/apply",
+    url: "https://portal.piaic.org/signup",
   },
   {
     name: "Portal",
-    url: "/portal",
+    url: "https://portal.piaic.org/",
   },
 ];
 
@@ -296,12 +296,12 @@ export const smallNavigationData: Array<INavigationData> = [
   },
   {
     name: "Apply",
-    url: "/apply",
+    url: "https://portal.piaic.org/signup",
     Icon: HiAcademicCap,
   },
   {
     name: "Portal",
-    url: "/portal",
+    url: "https://portal.piaic.org/",
     Icon: RiAdminFill,
   },
 ];
@@ -1426,3 +1426,10 @@ export const availableCoursesPageData: IAvailableCoursesPageData = {
     ],
   },
 };
+
+export const aboutPageData: Array<string> = [
+  "PIAIC, or Presidential Initiative for Artificial Intelligence & Computing, is a groundbreaking initiative launched by President Arif Alvi with the aim of revolutionizing education, research, and business in Pakistan. We believe that by adopting the latest cutting-edge technologies, such as AI, data science, cloud-native computing, edge computing, blockchain, augmented reality, and internet of things, we can reshape Pakistan and make it a global hub for innovation and technology.",
+  "At PIAIC, we are committed to providing quality education to everyone, regardless of their social status, background, or financial situation. Our program is designed to equip students and professionals with the necessary skills and knowledge to pursue a career in the field of AI and computing. We believe that by providing quality education and training, we can help create a pool of skilled professionals who can contribute to the development of Pakistan's technology industry.",
+  "Our CEO, Zia Khan, is a well-known figure in the technology industry with over two decades of experience. Under his leadership, PIAIC has expanded its reach across the country, providing access to quality education to people living in remote areas. Our vision is to create a technology-driven Pakistan, where every individual has access to the latest technologies and tools.",
+  "Join us in our mission to reshape Pakistan and make it a global hub for innovation and technology. Enroll in our program today and be a part of the 4th industrial revolution.",
+];

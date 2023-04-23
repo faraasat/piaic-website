@@ -6,6 +6,7 @@ import {
   availableCoursesData,
   bootcampData,
   metaverseCourseData,
+  aboutPageData
 } from "./data";
 
 import {
@@ -40,4 +41,5 @@ export {
   availableCoursesData,
   bootcampData,
   metaverseCourseData,
+  aboutPageData
 };

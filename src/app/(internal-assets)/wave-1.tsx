@@ -1,6 +1,10 @@
 import React from "react";
 
-function Wave1({ fillColor = "rgba(255,255,255,1)" }: { fillColor?: string }) {
+const Wave1 = ({
+  fillColor = "rgba(255,255,255,1)",
+}: {
+  fillColor?: string;
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,6 +24,6 @@ function Wave1({ fillColor = "rgba(255,255,255,1)" }: { fillColor?: string }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default Wave1;
