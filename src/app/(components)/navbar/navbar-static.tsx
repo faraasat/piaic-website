@@ -76,7 +76,7 @@ export const MainNavWrapper = ({
                       {nd.Icon && <nd.Icon className="text-[18px]" />}
                     </div>
                     <div className="flex items-center gap-0.5">
-                      <div className="flex items-center leading-[1] translate-y-[3px]">
+                      <div className="flex items-center leading-[1]">
                         {nd.name}
                       </div>
                       {nd.dropdown && (
@@ -116,9 +116,7 @@ export const MainNavWrapper = ({
                   <div className="flex items-center">
                     {nd.Icon && <nd.Icon className="text-[18px]" />}
                   </div>
-                  <div className="flex items-center leading-[1] translate-y-[3px]">
-                    {nd.name}
-                  </div>
+                  <div className="flex items-center leading-[1]">{nd.name}</div>
                 </Link>
               )}
             </FlowAnimation>
