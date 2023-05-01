@@ -59,7 +59,7 @@ const Bootcamp: FC<IBootcamp> = ({
             once={true}
             className="flex items-center"
           >
-            <h1 className="text-white text-[65px] text-center">{title}</h1>
+            <h1 className="text-white text-[65px] text-center max-xs:text-[35px] max-xs:leading[1] max-xs:mb-4">{title}</h1>
           </FlowAnimation>
           <FlowAnimation
             transitionDuration={0.6}
@@ -69,12 +69,12 @@ const Bootcamp: FC<IBootcamp> = ({
             once={true}
             className="flex items-center justify-center"
           >
-            <h3 className="text-white text-[25px] text-center font-montserrat">
+            <h3 className="text-white text-[25px] text-center font-montserrat max-sx:text-[20px] leading-[1.1]">
               {subTitle}
             </h3>
           </FlowAnimation>
         </div>
-        <div className="flex flex-col gap-8 mt-10">
+        <div className="flex flex-col gap-8 mt-10 max-xs:mt-6">
           <div className="grid grid-cols-12 items-center gap-5 max-lg:flex max-lg:flex-col">
             <FlowAnimation
               transitionDuration={0.6}
@@ -82,7 +82,7 @@ const Bootcamp: FC<IBootcamp> = ({
               initialScale={0}
               finalScale={1}
               once={true}
-              className="col-span-4 items-center justify-center max-lg:w-[400px]"
+              className="col-span-4 items-center justify-center max-lg:w-[400px] max-xs:w-auto max-xs:min-w-[280px]"
             >
               <Illustration />
             </FlowAnimation>
@@ -94,7 +94,7 @@ const Bootcamp: FC<IBootcamp> = ({
                 once={true}
                 className="flex items-center"
               >
-                <p className="text-justify text-white text-[22px] leading-[1.02] max-sm:text-[18px]">
+                <p className="text-justify text-white text-[22px] leading-[1.02] max-sm:text-[18px] max-xs:leading-[1] max-xs:text-[16px]">
                   {about}
                 </p>
               </FlowAnimation>
@@ -162,7 +162,7 @@ const Bootcamp: FC<IBootcamp> = ({
                               draggable={false}
                             />
                           </div>
-                          <div className="font-bold text-[16px] leading-[1.02] whitespace-nowrap">
+                          <div className="font-bold text-[16px] leading-[1.02] whitespace-nowrap max-sx:text-[13px]">
                             {ins.name}
                           </div>
                         </FlowAnimation>

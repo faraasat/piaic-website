@@ -67,10 +67,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={`${montserrat.variable}  ${josefin_sans.variable}`}>
+      <body
+        className={`${montserrat.variable}  ${josefin_sans.variable} w-full h-full`}
+      >
         <ThemeProvider>
           <Navbar />
-          <main className="flex flex-col">{children}</main>
+          <main className="flex flex-col w-full overflow-x-hidden h-full">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

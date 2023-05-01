@@ -141,7 +141,7 @@ export const SmallNavContent = ({ open }: { open: boolean }) => {
             return (
               <FlowAnimation
                 transitionDuration={0.5}
-                transitionDelay={i * 0.7}
+                transitionDelay={i * 0.2}
                 initialX="-20%"
                 finalX="0%"
                 transitionType="easeInOut"

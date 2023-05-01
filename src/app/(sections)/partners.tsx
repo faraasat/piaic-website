@@ -15,7 +15,7 @@ const Partners = () => {
           finalY={"0%"}
           once={true}
         >
-          <h1 className="text-[50px] font-bold text-[color:var(--primary-color-1)]">
+          <h1 className="text-[50px] font-bold text-[color:var(--primary-color-1)] text-center max-xs:text-[35px] max-xs:leading[1] max-xs:mb-4">
             Strategic Partners
           </h1>
         </FlowAnimation>

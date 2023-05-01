@@ -4,7 +4,7 @@ import { bootcampData, metaverseCourseData } from "@/data";
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full overflow-x-hidden h-full">
       <HomeSection />
       <AvailableCourses />
       {bootcampData.map((bd) => (

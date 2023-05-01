@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="flex flex-col z-[100]">
       <div className="flex justify-center bg-gradient-to-r from-[color:var(--primary-color-1)] to-[color:var(--primary-color-3)] text-[color:var(--primary-color-2)]">
         <div className="2xl:max-w-[1400px] w-[90%] py-8 flex justify-evenly flex-row max-md:flex-col">
-          <div className="flex flex-col items-center w-[35%] max-md:mb-8 max-md:flex-row max-md:w-[100%] max-md:gap-5">
+          <div className="flex flex-col items-center w-[35%] max-md:mb-8 max-md:flex-row max-md:w-[100%] max-md:gap-5 max-xs:flex-col">
             <div className="flex">
               <Link href={"/"} className="relative w-[134px] h-[184px]">
                 <Image
@@ -32,7 +32,7 @@ const Footer = () => {
               <h3 className="text-center my-4 font-montserrat font-bold text-lg max-md:mt-0 max-md:mb-2">
                 Modernizing Pakistan with Cutting Edge Technologies
               </h3>
-              <p className="text-justify">
+              <p className="text-justify max-xs:hidden">
                 The mission of PIAIC is to reshape Pakistan by revolutionizing
                 education, research, and business by adopting latest,
                 cutting-edge technologies. Experts are calling this the 4th
@@ -61,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="h-[100%] w-[1px] bg-[color:var(--primary-color-2)] max-md:hidden" />
-          <div className="flex flex-col w-auto max-md:flex-row max-md:justify-between">
+          <div className="flex flex-col w-auto max-md:flex-row max-md:justify-between max-xs:flex-col max-xs:w-full max-xs:gap-4">
             <div className="flex flex-col">
               <h3 className="flex font-montserrat items-center gap-2 font-black text-xl mb-2 max-md:font-bold max-md:font-lg">
                 <BsPinAngleFill /> Locations
