@@ -7,7 +7,7 @@ const ThemeProvider = ({
 }: {
   children?: JSX.Element | JSX.Element[];
 }) => {
-  return <NextThemes attribute="data-*">{children}</NextThemes>;
+  return <NextThemes>{children}</NextThemes>;
 };
 
 export default ThemeProvider;
